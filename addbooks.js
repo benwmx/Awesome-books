@@ -15,6 +15,7 @@ const showBooks = () => {
       author.innerText = storedBooks[i].author;
       button.innerText = 'Remove';
       button.setAttribute('id', storedBooks[i].id);
+      button.setAttribute('onclick', 'removeBook(this.id)');
       book.appendChild(title);
       book.appendChild(author);
       book.appendChild(button);
@@ -31,8 +32,8 @@ const addBook = () => {
   const author = document.getElementById('author');
   book.title = title.value;
   book.author = author.value;
-  if (books === null) {
-    book.id = '1';
+  if (books === null || books.length === 0) {
+    book.id = 1;
     books = [];
   } else {
     book.id = parseInt(books[books.length - 1].id, 10) + 1;
