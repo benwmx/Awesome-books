@@ -5,9 +5,9 @@ const button = document.getElementById('button');
 
 collection.showCollection();
 button.addEventListener('click', () => {
-collection.addBook();
+  collection.addBook();
 });
 
 const removeBook = (id) => {
-collection.removeBook(id);
+  collection.removeBook(id);
 };
