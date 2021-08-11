@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> One paragraph statement about the project.
+> this is a simple page that saves your list of ffavorite books in the browser.
 
 ![screenshot](./app_screenshot.png)
 
@@ -13,10 +13,6 @@ Additional description about the project and its features.
 - Html
 - Css
 - JavaScript
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
 
 
 ## Authors
