@@ -90,7 +90,7 @@ hr {
 }
 
 .add-new-book form input {
-  width: 50%;
+  width: 400px;
   height: 50px;
   margin: 20px auto;
   background-color: var(--color-baby);
@@ -98,6 +98,8 @@ hr {
 }
 
 .add-new-book form .submit {
+  position: relative;
+  left: 135px;
   width: 7rem;
   background-color: var(--color-teal);
   border: transparent;

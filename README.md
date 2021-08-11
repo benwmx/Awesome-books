@@ -13,10 +13,6 @@ Additional description about the project and its features.
 - Html
 - Css
 - JavaScript
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
 
 
 ## Authors
