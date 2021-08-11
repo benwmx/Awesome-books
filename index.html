@@ -5,19 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Style+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
   <h1>Awsome Books</h1>
   <div id="books" class="books"></div>
-  <form action="#">
-    <input type="text" name="title" id="title" placeholder="Title" required>
-    <br>
-    <input type="text" name="author" id="author" placeholder="Author" required>
-    <br>
-    <input type="button" value="Add" id="button">
-  </form>
+  <div class="line"></div>
+  <section class="add-new-book">
+    <h2>Add a new book</h2>
+    <form action="#">
+      <input class="input" type="text" name="title" id="title" placeholder="Title" required>
+      <br>
+      <input class="input" type="text" name="author" id="author" placeholder="Author" required>
+      <br>
+      <input class="submit" type="button" value="Add" id="button">
+    </form>
+  </section>
   <script src="./Book.js"></script>
   <script src="./Collection.js"></script>
   <script src="./main.js"></script>
