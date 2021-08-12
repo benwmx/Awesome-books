@@ -8,24 +8,60 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Style+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4f02d055e5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Awsome Books</h1>
-  <div id="books" class="books"></div>
-  <div class="line"></div>
-  <section class="add-new-book">
-    <h2>Add a new book</h2>
-    <form action="#">
-      <input class="input" type="text" name="title" id="title" placeholder="Title" required>
-      <br>
-      <input class="input" type="text" name="author" id="author" placeholder="Author" required>
-      <br>
-      <input class="submit" type="button" value="Add" id="button">
-    </form>
-  </section>
+  <header>
+    <nav>
+      <p class="logo">Awesome Books</p>
+      <ul class="nav-items">
+        <li id="list" class="list">List</li>
+        <li id="add" class="Add">Add New</li>
+        <li id="contact" class="Contact">Contact</li>
+      </ul>
+    </nav>
+    <p id="time" class="time"></p>
+  </header>
+  <main>
+    <section class="all-books">
+      <h2>All awesome Books</h2>
+      <div id="books" class="books">
+        <p class="msg-list"> THE LIST IS EMPTY !!!!</p>
+      </div>
+    </section>
+    <section class="add-new-book d-none">
+      <h2>Add a new book</h2>
+      <form action="#">
+        <input class="input" type="text" name="title" id="title" placeholder="Title" required>
+        <br>
+        <input class="input" type="text" name="author" id="author" placeholder="Author" required>
+        <br>
+        <input class="submit" type="button" value="Add" id="button">
+      </form>
+    </section>
+    <section class="contact d-none">
+      <h2>Contact Information</h2>
+      <p class="question">Do you have any questions or you just want to say "Hello"?"
+        <br>
+        you can reach out to us!
+      </p>
+      <ul>
+        <li>Our e-mail : mail@example.com</li>
+        <li>Our phone number : 0043522698566</li>
+        <li>Our address : Heaven Street 23, 777, Coco City, Mars</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="copyright"><i class="fas fa-copyright"></i>Copyright 2021</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
   <script src="./Book.js"></script>
   <script src="./Collection.js"></script>
   <script src="./main.js"></script>
