@@ -36,10 +36,11 @@
     <section class="add-new-book d-none">
       <h2>Add a new book</h2>
       <form action="#">
-        <input class="input" type="text" name="title" id="title" placeholder="Title" required>
+        <input class="input" type="text" name="title" id="title" placeholder="Title" minlength="5" required>
         <br>
         <input class="input" type="text" name="author" id="author" placeholder="Author" required>
         <br>
+        <span id="error-msg" class="d-none"></span>
         <input class="submit" type="button" value="Add" id="button">
       </form>
     </section>

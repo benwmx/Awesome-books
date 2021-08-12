@@ -40,8 +40,12 @@ buttonContact.addEventListener('click', () => {
 });
 
 button.addEventListener('click', () => {
-  collection.addBook();
-  showContent('list');
+  const isEmpty = collection.addBook();
+  if (isEmpty) {
+    document.getElementById('error-msg').innerText = 'Error !! Empty blank';
+  } else {
+    showContent('list');
+  }
 });
 
 const removeBook = (id) => {
