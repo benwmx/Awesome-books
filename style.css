@@ -1,42 +1,123 @@
 :root {
-  --font-script: 'Style Script', cursive;
+  --font-indie: 'Indie Flower', cursive;
   --font-boogaloo: 'Boogaloo', cursive;
   --color-navy: #004369;
+  --color-navy-harmonic: #1a5d83;
   --color-red: #db1f48;
   --color-teal: #01949a;
   --color-sand: #e5ddc8;
   --color-baby: #c0dcec;
 }
 
+html {
+  padding: 0;
+}
+
 body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: var(--color-navy);
 }
 
-.books p {
-  font-family: var(--font-script);
-  font-size: 1.5rem;
-  color: var(--color-sand);
+nav {
+  background-color: var(--color-navy-harmonic);
 }
 
-h1 {
-  font-family: var(--font-boogaloo);
-  font-size: 3rem;
-  text-align: center;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  background-color: var(--color-navy-harmonic);
+}
+
+footer p {
   color: var(--color-sand);
+  font-size: 1.3rem;
+  font-family: var(--font-boogaloo);
+  font-weight: normal;
+}
+
+footer p i {
+  margin-right: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header nav .logo {
+  margin: 0 20px;
+  font-family: var(--font-boogaloo);
+  color: var(--color-baby);
+  font-size: 1.7rem;
+}
+
+header nav .nav-items {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact p,
+.contact li {
+  font-family: var(--font-boogaloo);
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: var(--color-baby);
+}
+
+header nav .nav-items li {
+  cursor: pointer;
+  margin: 0 20px;
+  color: var(--color-sand);
+  font-family: var(--font-boogaloo);
+  font-size: 1.3rem;
+}
+
+header nav .nav-items li:hover {
+  color: var(--color-red);
+}
+
+header .time {
+  /* float: right; */
+  text-align: right;
+  margin-right: 20px;
+  color: var(--color-baby);
+  font-family: var(--font-boogaloo);
+  font-weight: normal;
+}
+
+main {
+  height: 80vh;
+  overflow: auto;
+}
+
+.books p {
+  font-family: var(--font-indie);
+  color: var(--color-sand);
+  font-size: 1.5rem;
 }
 
 h2 {
   font-family: var(--font-boogaloo);
   color: var(--color-sand);
+  font-size: 3rem;
+  text-align: center;
 }
 
 .books {
   width: 90%;
+  min-height: 100px;
   border: 3px solid var(--color-teal);
   border-radius: 30px;
-  margin: 10px auto;
+  margin: 10px auto 50px;
   overflow: hidden;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -45,6 +126,7 @@ h2 {
 }
 
 .books .remove {
+  cursor: pointer;
   background-color: var(--color-red);
   border: transparent;
   padding: 10px;
@@ -54,6 +136,11 @@ h2 {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+
+.books .msg-list {
+  color: var(--color-red);
+  text-align: center;
 }
 
 .books .remove:active {
@@ -70,23 +157,10 @@ hr {
   display: none;
 }
 
-.line {
-  background-color: var(--color-red);
-  width: 50%;
-  height: 4px;
-  margin: 70px auto;
-}
-
 .add-new-book {
   width: 70%;
   margin: 70px auto;
   text-align: center;
-  border: 3px solid var(--color-teal);
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
 }
 
 .add-new-book form input {
@@ -97,9 +171,17 @@ hr {
   border: none;
 }
 
+.add-new-book form {
+  border: 3px solid var(--color-teal);
+  border-radius: 40px;
+  padding: 40px;
+  margin-top: 10px;
+}
+
 .add-new-book form .submit {
+  cursor: pointer;
   position: relative;
-  left: 135px;
+  left: 148px;
   width: 7rem;
   background-color: var(--color-teal);
   border: transparent;
@@ -126,6 +208,23 @@ hr {
 
 .title-author {
   display: flex;
-  width: 40%;
+  width: auto;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.title-author .by {
+  margin: auto 25px;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.d-none {
+  display: none;
 }
