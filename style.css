@@ -199,6 +199,48 @@ hr {
   color: var(--color-teal);
 }
 
+#error-msg {
+  font-family: var(--font-indie);
+  font-size: 1.4rem;
+  color: var(--color-red);
+}
+
+.counter {
+  margin: 80px;
+  color: var(--color-baby);
+}
+
+.counter p {
+  font-family: var(--font-boogaloo);
+  font-size: 1.5rem;
+}
+
+.counter .bounce {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  animation: bounce 0.8s alternate infinite ease-in-out;
+  -webkit-animation: bounce 0.8s alternate infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(1px);
+    -webkit-transform: translateX(1px);
+    -moz-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    -o-transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+  }
+}
+
 .info {
   display: flex;
   align-items: baseline;

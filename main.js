@@ -6,6 +6,7 @@ const button = document.getElementById('button');
 const buttonList = document.getElementById('list');
 const buttonAdd = document.getElementById('add');
 const buttonContact = document.getElementById('contact');
+const error = document.getElementById('error-msg');
 
 const showContent = (content) => {
   const list = document.querySelector('.all-books');
@@ -28,6 +29,26 @@ const showContent = (content) => {
     contact.classList.remove('d-none');
   }
 };
+const validateEmpty = () => {
+  const title = document.getElementById('title');
+  const author = document.getElementById('author');
+  let isEmpty = false;
+
+  if (title.value.trim().length === 0 || author.value.trim().length === 0) {
+    isEmpty = true;
+    return isEmpty;
+  }
+
+  return isEmpty;
+};
+
+const showError = () => {
+  error.classList.remove('d-none');
+};
+
+const hideError = () => {
+  error.classList.add('d-none');
+};
 
 buttonList.addEventListener('click', () => {
   showContent('list');
@@ -40,8 +61,13 @@ buttonContact.addEventListener('click', () => {
 });
 
 button.addEventListener('click', () => {
-  collection.addBook();
-  showContent('list');
+  if (validateEmpty()) {
+    showError();
+  } else {
+    hideError();
+    collection.addBook();
+    // showContent('list');
+  }
 });
 
 const removeBook = (id) => {

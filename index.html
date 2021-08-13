@@ -10,8 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Style+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4f02d055e5.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./img/001-study.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Awesome Books</title>
 </head>
 
 <body>
@@ -40,9 +41,15 @@
         <br>
         <input class="input" type="text" name="author" id="author" placeholder="Author" required>
         <br>
-        <span id="error-msg" class="d-none"></span>
+
         <input class="submit" type="button" value="Add" id="button">
+        <br>
+        <span id="error-msg" class="d-none">Error!! The author Or title is Empty</span>
       </form>
+      <div id="counter" class="counter">
+        <p>Books Added :<span id="counter-show"> 0</span></p>
+        <i class="fas fa-arrow-circle-left bounce"></i>
+      </div>
     </section>
     <section class="contact d-none">
       <h2>Contact Information</h2>
