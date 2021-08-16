@@ -7,6 +7,8 @@ const buttonList = document.getElementById('list');
 const buttonAdd = document.getElementById('add');
 const buttonContact = document.getElementById('contact');
 const error = document.getElementById('error-msg');
+const arrowList = document.getElementById('arrow-list');
+const counterShow = document.getElementById('counter-show');
 
 const showContent = (content) => {
   const list = document.querySelector('.all-books');
@@ -29,6 +31,7 @@ const showContent = (content) => {
     contact.classList.remove('d-none');
   }
 };
+
 const validateEmpty = () => {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
@@ -50,7 +53,17 @@ const hideError = () => {
   error.classList.add('d-none');
 };
 
+const counter = {
+  addOne: () => {
+    counterShow.innerText = parseInt(counterShow.innerText.trim(), 10) + 1;
+  },
+  reset: () => {
+    counterShow.innerText = '0';
+  },
+};
+
 buttonList.addEventListener('click', () => {
+  counter.reset();
   showContent('list');
 });
 buttonAdd.addEventListener('click', () => {
@@ -66,8 +79,13 @@ button.addEventListener('click', () => {
   } else {
     hideError();
     collection.addBook();
-    // showContent('list');
+    counter.addOne();
   }
+});
+
+arrowList.addEventListener('click', () => {
+  showContent('list');
+  counter.reset();
 });
 
 const removeBook = (id) => {
@@ -75,8 +93,11 @@ const removeBook = (id) => {
 };
 
 collection.showCollection();
+
+// Show the Time
 const dateTime = luxon.DateTime;
 const time = document.getElementById('time');
+
 const showTime = () => {
   time.innerText = dateTime.now().toLocaleString(dateTime.DATETIME_MED);
 };

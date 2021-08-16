@@ -53,10 +53,22 @@ header nav {
 }
 
 header nav .logo {
-  margin: 0 20px;
+  margin: 0 0 0 10px;
   font-family: var(--font-boogaloo);
   color: var(--color-baby);
   font-size: 1.7rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0 0 20px;
+}
+
+header nav .logo-container img {
+  width: 30px;
+  height: 30px;
 }
 
 header nav .nav-items {
@@ -221,6 +233,16 @@ hr {
   font-size: 1.6rem;
   animation: bounce 0.8s alternate infinite ease-in-out;
   -webkit-animation: bounce 0.8s alternate infinite ease-in-out;
+}
+
+.counter .bounce:hover {
+  transform: scale(2);
+  animation: bounce 0;
+  -webkit-animation: bounce 0;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 
 @keyframes bounce {

@@ -19,15 +19,9 @@ Additional description about the project and its features.
 
 👤 **Rachid Boudaoudi **
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Mahbubul Alam**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@benwmx](https://github.com/benwmx)
+- Twitter: [@ben-wmx](https://twitter.com/ben_wmx)
+- LinkedIn: [Rachid Boudaoudi](https://www.linkedin.com/in/rachid-boudaoudi-1621a0183/)
 
 ## 🤝 Contributing
 

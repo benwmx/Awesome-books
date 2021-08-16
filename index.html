@@ -18,7 +18,10 @@
 <body>
   <header>
     <nav>
-      <p class="logo">Awesome Books</p>
+      <div class="logo-container">
+        <img src=" ./img/001-study.png" alt="image of aan open book">
+        <p class="logo"> Awesome Books</p>
+      </div>
       <ul class="nav-items">
         <li id="list" class="list">List</li>
         <li id="add" class="Add">Add New</li>
@@ -47,8 +50,8 @@
         <span id="error-msg" class="d-none">Error!! The author Or title is Empty</span>
       </form>
       <div id="counter" class="counter">
-        <p>Books Added :<span id="counter-show"> 0</span></p>
-        <i class="fas fa-arrow-circle-left bounce"></i>
+        <p>Books Added : <span id="counter-show"> 0</span></p>
+        <i id="arrow-list" class="fas fa-arrow-circle-left bounce"></i>
       </div>
     </section>
     <section class="contact d-none">
