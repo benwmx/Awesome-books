@@ -6,7 +6,9 @@
 
 ## Live Demo
 
- [live](https://benwmx.github.io/Awesome-books/)
+[live](https://benwmx.github.io/Awesome-books/)
+
+## Screenshot
 
 ![screenshot](./img/demo.gif)
 
