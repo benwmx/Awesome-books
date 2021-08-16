@@ -4,7 +4,11 @@
 
 > this is a simple page that saves your list of ffavorite books in the browser.
 
-![screenshot](./app_screenshot.png)
+## Live Demo
+
+ [live](https://benwmx.github.io/Awesome-books/)
+
+![screenshot](./img/demo.gif)
 
 Additional description about the project and its features.
 
@@ -32,12 +36,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
