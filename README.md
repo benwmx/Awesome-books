@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-> this is a simple page that saves your list of ffavorite books in the browser.
+> this is a simple application that saves your list of favorite books.
 
 ## Live Demo
 
